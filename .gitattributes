@@ -1,0 +1,19 @@
+# Exclude support scripts from GitHub language statistics
+scripts/*.py linguist-generated=true
+
+# Exclude project documentation/assets from language statistics
+docs/* linguist-documentation=true
+README.md linguist-documentation=true
+
+# Exclude data files
+data/**/*.csv linguist-generated=true
+
+# Exclude Power BI binary/report files from language statistics
+*.pbix linguist-generated=true
+*.pdf linguist-generated=true
+*.png linguist-generated=true
+*.jpg linguist-generated=true
+*.jpeg linguist-generated=true
+
+# Exclude theme/config files
+assets/**/*.json linguist-generated=true
