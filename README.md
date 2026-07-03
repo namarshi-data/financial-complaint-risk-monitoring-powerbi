@@ -308,18 +308,6 @@ python scripts/generate_data_profile.py
 
 ---
 
-## Portfolio Positioning
-
-Use this project title on a resume:
-
-**Financial Complaint Analytics & Risk Monitoring Dashboard — Power BI**
-
-Resume summary:
-
-> Built a Power BI financial complaint analytics dashboard using Power Query, a star-schema model, and DAX measures to monitor complaint volume, response timeliness, high-risk indicators, company concentration, category drivers, and data-quality controls.
-
----
-
 ## Project Limitations
 
 - This is a portfolio analytics project, not an official regulatory report.
