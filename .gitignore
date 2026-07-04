@@ -14,6 +14,9 @@
 PerformanceAnalyzer/
 *.daxcache
 
+# Data files
+*.csv
+
 # Office temp files
 ~$*
 .DS_Store
