@@ -177,12 +177,12 @@ financial-complaint-risk-monitoring-powerbi/
 ├── LICENSE
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
-# Technical Implementation, Governance, and Portfolio Notes
+## Technical Implementation, Governance, and Portfolio Notes
 
-## Tools & Skills Demonstrated
+### Tools & Skills Demonstrated
 
 - Power BI Desktop
 - Power Query data transformation
@@ -201,7 +201,7 @@ financial-complaint-risk-monitoring-powerbi/
 
 ---
 
-## Data Model
+### Data Model
 
 The report uses a star-schema model with a complaint-level fact table and supporting dimensions.
 
@@ -213,26 +213,6 @@ Dim_State      1 ─── * Fact_Complaints
 Dim_Response   1 ─── * Fact_Complaints
 Dim_Channel    1 ─── * Fact_Complaints
 ```
-
-Primary fact table:
-
-```text
-Fact_Complaints
-```
-
-Primary reporting grain:
-
-```text
-One row per complaint
-```
-
-Primary transaction key:
-
-```text
-Complaint ID
-```
-
----
 
 ## Main KPI Logic
 
@@ -325,18 +305,6 @@ Generate a data profile:
 ```bash
 python scripts/generate_data_profile.py
 ```
-
----
-
-## Portfolio Positioning
-
-Use this project title on a resume:
-
-**Financial Complaint Analytics & Risk Monitoring Dashboard — Power BI**
-
-Resume summary:
-
-> Built a Power BI financial complaint analytics dashboard using Power Query, a star-schema model, and DAX measures to monitor complaint volume, response timeliness, high-risk indicators, company concentration, category drivers, and data-quality controls.
 
 ---
 
