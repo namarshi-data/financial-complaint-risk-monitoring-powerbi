@@ -21,6 +21,10 @@ Thumbs.db
 
 # Data files
 *.csv
+*.xlsx
+*.xls
+*.parquet
+*.jsonl
 
 # Python
 __pycache__/
