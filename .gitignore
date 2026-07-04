@@ -15,6 +15,10 @@ PerformanceAnalyzer/
 *.daxcache
 
 # Data files
+# Data files
+data/raw/
+data/interim/
+data/processed/
 *.csv
 
 # Office temp files
