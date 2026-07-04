@@ -1,20 +1,22 @@
 # Financial Complaint Analytics & Risk Monitoring Dashboard
 
+> Power BI financial complaint analytics dashboard for executive reporting, operational risk monitoring, company benchmarking, drill-through analysis, and data governance.
+
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
 ![Finance Analytics](https://img.shields.io/badge/Finance%20Analytics-Risk%20Monitoring-0F172A)
 ![DAX](https://img.shields.io/badge/DAX-KPI%20Measures-2563EB)
 ![Status](https://img.shields.io/badge/Status-Portfolio%20Ready-0F766E)
 
-## Executive Summary
+## Recruiter Summary
 
-This project is a Power BI financial complaint analytics dashboard designed for complaint operations, risk monitoring, executive reporting, and data governance.
+This project is a **Power BI financial complaint analytics and risk monitoring dashboard** designed for complaint operations, executive reporting, data governance, and operational risk review.
 
-The dashboard analyzes complaint volume, response timeliness, company concentration, category drivers, complex complaint narratives, high-risk complaint indicators, and data-quality controls. It is designed to show how Power BI can be used in a financial services environment to support operational monitoring, risk prioritization, and management reporting.
+The dashboard analyzes complaint volume, response timeliness, company concentration, category drivers, complex complaint narratives, high-risk complaint indicators, and data-quality controls. It demonstrates how Power BI can support financial-services teams with KPI monitoring, risk prioritization, company benchmarking, drill-through investigation, and management reporting.
 
-This project is positioned for finance, banking, insurance, risk, compliance, reporting, and business intelligence analyst roles in Canada.
+This project is positioned for **finance, banking, insurance, risk, compliance, reporting, and business intelligence analyst roles in Canada**, where employers expect Power BI, DAX, Power Query, data modelling, dashboard design, governance awareness, and business communication.
 
 > **Important positioning note:**  
-> The source data contains U.S.-style state codes. This project should be described as a financial complaint analytics simulation that is adaptable to Canadian financial services operations, not as Canadian customer complaint data.
+> The source data contains U.S.-style state codes. This project should be presented as a **financial complaint analytics simulation adaptable to Canadian financial-services operations**, not as Canadian customer complaint data.
 
 ---
 
@@ -40,14 +42,14 @@ Financial institutions receive complaints across products, companies, issues, lo
 
 ## Solution
 
-I built a seven-page Power BI dashboard that combines executive reporting, risk monitoring, company benchmarking, drill-through investigation, root-cause analysis, data governance, and AI-assisted risk-driver exploration.
+This project includes a seven-page Power BI dashboard that combines executive reporting, operational risk monitoring, company benchmarking, drill-through investigation, root-cause analysis, data governance, and AI-assisted risk-driver exploration.
 
 The report uses:
 
-- Power Query for data cleaning and transformation
-- Star-schema semantic modeling
+- Power Query for data cleaning, transformation, and category standardization
+- Star-schema semantic modelling for scalable BI reporting
 - DAX measures for KPIs, rates, rankings, concentration, and risk scoring
-- Drill-through navigation for company-level analysis
+- Drill-through navigation for company-level investigation
 - Decomposition tree analysis for complaint root-cause exploration
 - Power BI Key Influencers for directional high-risk complaint insights
 - Data-quality and governance documentation for auditability
@@ -90,7 +92,7 @@ The report uses:
 
 ---
 
-## Screenshots
+## Visual Outputs
 
 ### Executive Overview
 
@@ -122,86 +124,23 @@ The report uses:
 
 ---
 
-## Repository Structure
+## Tools & Skills Demonstrated
 
-```text
-financial-complaint-risk-monitoring-powerbi/
-│
-├── powerbi/
-│   └── financial_complaint_analytics.pbix
-│
-├── reports/
-│   └── financial_complaint_analytics_dashboard.pdf
-│
-├── screenshots/
-│   ├── page_01_executive_overview.png
-│   ├── page_02_risk_timeliness_monitoring.png
-│   ├── page_03_company_benchmarking.png
-│   ├── page_04_company_detail_drillthrough.png
-│   ├── page_05_category_issue_deep_dive.png
-│   ├── page_06_data_quality_governance.png
-│   └── page_07_ai_insights_high_risk_drivers.png
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── docs/
-│   ├── project_overview.md
-│   ├── dashboard_design_spec.md
-│   ├── data_dictionary.md
-│   ├── data_profile.md
-│   ├── data_quality_governance.md
-│   ├── dax_measure_library.md
-│   ├── deployment_guide.md
-│   ├── interview_talking_points.md
-│   ├── power_query_transformation_guide.md
-│   └── resume_bullets.md
-│
-├── sql/
-│   └── financial_complaint_mysql_workbench_view_layer.sql
-│
-├── scripts/
-│   ├── validate_data.py
-│   └── generate_data_profile.py
-│
-├── assets/
-│   └── themes/
-│       └── financial_services_theme.json
-│
-├── .github/
-│   └── workflows/
-│       └── data-quality.yml
-│
-├── .gitignore
-├── LICENSE
-├── requirements.txt
-└── README.md
-```
----
-
-## Technical Implementation, Governance, and Portfolio Notes
-
-### Tools & Skills Demonstrated
-
-- Power BI Desktop
-- Power Query data transformation
-- DAX KPI measures
-- Star-schema semantic modeling
-- Data-quality validation
-- Executive dashboard design
-- Risk and operational performance reporting
-- Company and category benchmarking
-- Drill-through reporting
-- Decomposition tree analysis
-- Power BI Key Influencers visual
-- SQL view layer for reporting logic
-- Python validation scripts
-- GitHub-ready project documentation
+| Area | Evidence |
+|---|---|
+| Power BI reporting | Seven-page dashboard with executive, risk, benchmarking, drill-through, category, governance, and AI insights pages |
+| Power Query | Data cleaning, category standardization, missing state handling, and reporting table preparation |
+| DAX | KPI measures for complaint count, timeliness, late response rate, high-risk rate, concentration, and operational risk score |
+| Data modelling | Star-schema model using fact and dimension tables |
+| Risk monitoring | High-risk complaint flag, late response tracking, company risk matrix, and risk-driver exploration |
+| Data governance | Data-quality page, missing value handling, control notes, and QA validation |
+| SQL readiness | MySQL view layer for reporting logic and validation |
+| Python validation | Scripts for data validation and data profiling |
+| Business communication | Executive dashboard design, screenshots, PDF report, and recruiter-ready documentation |
 
 ---
 
-### Data Model
+## Data Model Summary
 
 The report uses a star-schema model with a complaint-level fact table and supporting dimensions.
 
@@ -228,20 +167,7 @@ Dim_Channel    1 ─── * Fact_Complaints
 
 ---
 
-## High-Risk Definition
-
-A complaint is classified as high risk if it meets at least one of the following conditions:
-
-- The company response was late
-- The complaint narrative contains at least 300 words
-
-This business-rule definition is used for KPI reporting, company prioritization, risk monitoring, and the AI Insights page.
-
-The high-risk flag is an analytical indicator, not a regulatory risk classification.
-
----
-
-## Data Governance Notes
+## Data Governance Summary
 
 - Complaint ID is used as the unique transaction key for complaint-level reporting.
 - Complaint category labels were standardized to support consistent reporting and aggregation.
@@ -253,36 +179,44 @@ The high-risk flag is an analytical indicator, not a regulatory risk classificat
 
 ---
 
-## SQL Layer
+## Detailed Documentation
 
-The repository includes a MySQL Workbench-compatible SQL view layer for cleaned reporting outputs.
+Additional project documentation is available in the `docs/` folder:
 
-Example views include:
-
-- `vw_fact_complaints_clean`
-- `vw_monthly_complaint_kpis`
-- `vw_company_category_kpis`
-- `vw_company_risk_summary`
-- `vw_portfolio_summary`
-- `vw_data_quality_summary`
-- `vw_missing_state_exceptions`
-
-These views support data validation, reporting logic, and Power BI model preparation.
+- `docs/project_overview.md`
+- `docs/dashboard_design_spec.md`
+- `docs/data_dictionary.md`
+- `docs/data_profile.md`
+- `docs/data_quality_governance.md`
+- `docs/dax_measure_library.md`
+- `docs/risk_scoring_logic.md`
+- `docs/deployment_guide.md`
+- `docs/interview_talking_points.md`
+- `docs/power_query_transformation_guide.md`
+- `docs/resume_bullets.md`
+- `docs/sql_view_layer.md`
+- `docs/data_validation_guide.md`
+- `docs/repository_structure.md`
 
 ---
 
-## Deployment Guide
+## How to Open the Dashboard
 
-1. Open `powerbi/financial_complaint_analytics.pbix` in Power BI Desktop.
-2. Go to **Transform Data > Data source settings**.
+1. Open the Power BI report in Power BI Desktop:
+
+```text
+powerbi/financial_complaint_analytics.pbix
+```
+
+2. In Power BI Desktop, go to **Transform Data > Data source settings**.
 3. Confirm that source paths point to the local `data/raw/` folder.
 4. Refresh all tables.
-5. Review all seven report pages.
-6. Validate slicers, drill-through navigation, and AI visuals.
-7. Publish to Power BI Service.
-8. Configure scheduled refresh if source files are moved to SharePoint, OneDrive, or a gateway-accessible folder.
-9. Export final screenshots or PDF from Reading View for GitHub and LinkedIn.
-10. Keep `reports/financial_complaint_analytics_dashboard.pdf` updated after major dashboard revisions.
+5. Review the seven dashboard pages.
+6. Use the exported PDF for quick review:
+
+```text
+reports/financial_complaint_analytics_dashboard.pdf
+```
 
 ---
 
