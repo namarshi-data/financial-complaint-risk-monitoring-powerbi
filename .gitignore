@@ -19,19 +19,27 @@ PerformanceAnalyzer/
 .DS_Store
 Thumbs.db
 
-# Raw and generated data
+# Raw source data is committed for reproducibility.
+!data/raw/
+!data/raw/**
 
-# Keep folder structure with .gitkeep files only.
-
-data/raw
-data/processed
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-
-# Sample data can be committed.
-
+# Sample data is allowed.
 !data/sample/
-!data/sample/.gitkeep
+!data/sample/**
+
+# Processed/generated files are ignored.
+data/processed/*
+data/interim/*
+data/exports/*
+data/output/*
+data/outputs/*
+
+# Keep folder structure.
+!data/processed/.gitkeep
+!data/interim/.gitkeep
+!data/exports/.gitkeep
+!data/output/.gitkeep
+!data/outputs/.gitkeep
 
 # Spreadsheet/source data files
 
