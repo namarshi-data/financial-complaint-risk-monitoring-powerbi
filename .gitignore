@@ -19,12 +19,30 @@ PerformanceAnalyzer/
 .DS_Store
 Thumbs.db
 
-# Data files
-*.csv
+# Raw and generated data
+
+# Keep folder structure with .gitkeep files only.
+
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# Sample data can be committed.
+
+!data/sample/
+!data/sample/.gitkeep
+
+# Spreadsheet/source data files
+
 *.xlsx
 *.xls
-*.parquet
-*.jsonl
+*.xlsm
+*.csv.bak
 
 # Python
 __pycache__/
