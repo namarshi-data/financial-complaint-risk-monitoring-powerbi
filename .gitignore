@@ -23,14 +23,10 @@ Thumbs.db
 
 # Keep folder structure with .gitkeep files only.
 
-data/raw/*
-data/interim/*
-data/processed/*
-data/external/*
+data/raw
+data/processed
 !data/raw/.gitkeep
-!data/interim/.gitkeep
 !data/processed/.gitkeep
-!data/external/.gitkeep
 
 # Sample data can be committed.
 
